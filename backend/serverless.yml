@@ -93,6 +93,7 @@ functions:
 
   CreateTodo:
     handler: src/lambda/http/createTodo.handler
+    tracing: true
     events:
       - http:
           method: post
@@ -120,6 +121,7 @@ functions:
   # TODO: Configure this function
   UpdateTodo:
     handler: src/lambda/http/updateTodo.handler
+    tracing: true
     events:
       - http:
           method: patch
@@ -147,6 +149,7 @@ functions:
   # DELETE: Configure this function
   DeleteTodo:
     handler: src/lambda/http/deleteTodo.handler
+    tracing: true
     events:
       - http:
           method: delete
@@ -168,6 +171,7 @@ functions:
   # POST: Configure this function
   GenerateUploadUrl:
     handler: src/lambda/http/generateUploadUrl.handler
+    tracing: true
     events:
       - http:
           method: post
